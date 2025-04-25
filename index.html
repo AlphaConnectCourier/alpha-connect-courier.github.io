@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,9 +22,9 @@
             display: flex;
             align-items: center;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            border-bottom: 2px solid white;
             position: relative;
             z-index: 2;
+            border-bottom: 2px solid white;
         }
         header img {
             max-width: 200px;
@@ -92,6 +91,23 @@
             text-align: center;
             padding: 1rem 0;
         }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+            header img {
+                max-width: 150px;
+                margin: 0 0 10px 0;
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -112,7 +128,7 @@
 
     <section id="about">
         <h2>About Us</h2>
-        <p>At Alpha Connect Courier, Inc., we specialize in delivering packages with speed, care, and precision. Whether it's medical supplies, business documents, or urgent deliveries, our experienced team ensures it gets there on time.</p>
+        <p>Alpha Connect Courier, Inc. has been proudly serving California for years, building a reputation for unmatched reliability, speed, and customer service. Our mission is simple: to deliver your packages with the same care and urgency as if they were our own. Trusted by businesses and individuals alike, we are committed to keeping California connected one delivery at a time.</p>
     </section>
 
     <section id="services">
