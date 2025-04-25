@@ -4,53 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Connect Courier, Inc.</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #005fa3;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 1rem;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        form button {
+            padding: 10px;
+            font-size: 1rem;
+            background: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#booking">Booking</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to Alpha Connect Courier, Inc.</h1>
-        <p>Your reliable delivery service for all your shipping needs.</p>
-    </header>
-    
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to our website!</p>
-    </section>
 
-    <section id="booking">
-        <h2>Booking</h2>
-        <p>Book your next delivery with us!</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Details of the Package:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <header>
+        <h1>Alpha Connect Courier, Inc.</h1>
+        <p>Fast, Reliable, and Professional Delivery Solutions</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <section id="about">
-        <h2>About</h2>
-        <p>We provide fast, reliable, and affordable courier services nationwide.</p>
+        <h2>About Us</h2>
+        <p>At Alpha Connect Courier, Inc., we specialize in delivering packages with speed, care, and precision. Whether it's medical supplies, business documents, or urgent deliveries, our experienced team ensures it gets there on time.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Same-day Delivery</li>
+            <li>Scheduled Routes</li>
+            <li>Medical & Pharmacy Courier</li>
+            <li>Business & Legal Document Delivery</li>
+            <li>Custom Courier Solutions</li>
+        </ul>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or want to work with us, feel free to reach out!</p>
-        <p>Email us: <a href="mailto:alphaconnectcourier@gmail.com">alphaconnectcourier@gmail.com</a></p>
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+
+    <footer>
+        <p>&copy; 2025 Alpha Connect Courier, Inc. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
