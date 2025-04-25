@@ -1,142 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Connect Courier, Inc.</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
-        header {
-            background: #ffffff;
-            color: #333;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 2;
-        }
-        header img {
-    max-width: 200px;
-    margin-right: 20px;
-}
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
-        header p {
-            margin: 0;
-            font-size: 1rem;
-        }
-        nav {
-            background: #FFA726;
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #333;
-        }
-        section {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        form input, form textarea {
-            margin-bottom: 1rem;
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        form button {
-            padding: 10px;
-            font-size: 1rem;
-            background: #FFA726;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        form button:hover {
-            background: #fb8c00;
-        }
-        footer {
-            background: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Connect Courier, Inc.</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: #8BC34A; /* Light Green */
+      color: #ffffff; /* White text */
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 2;
+    }
+    header img {
+      max-width: 200px;
+      margin-right: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      background: #FFA726;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #333;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 1rem;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 10px;
+      font-size: 1rem;
+      background: #FFA726;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #fb8c00;
+    }
+    footer {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <img src="data:image/png;base64,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">
-        <div>
-            <h1>Alpha Connect Courier, Inc.</h1>
-            <p>Fast, Reliable, and Professional Delivery Solutions</p>
-        </div>
-    </header>
+  <header>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAY..." alt="Alpha Connect Courier Logo">
+    <div>
+      <h1>Alpha Connect Courier, Inc.</h1>
+      <p>Fast, Reliable, and Professional Delivery Solutions</p>
+    </div>
+  </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Alpha Connect Courier, Inc., we specialize in delivering packages with speed, care, and precision. Whether it's medical supplies, business documents, or urgent deliveries, our experienced team ensures it gets there on time.</p>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Alpha Connect Courier, Inc., we specialize in delivering packages with speed, care, and precision. Whether it's medical supplies, business documents, or urgent deliveries, our experienced team ensures it gets there on time.</p>
+  </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Same-day Delivery</li>
-            <li>Scheduled Routes</li>
-            <li>Medical & Pharmacy Courier</li>
-            <li>Business & Legal Document Delivery</li>
-            <li>Custom Courier Solutions</li>
-        </ul>
-    </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Same-day Delivery</li>
+      <li>Scheduled Routes</li>
+      <li>Medical & Pharmacy Courier</li>
+      <li>Business & Legal Document Delivery</li>
+      <li>Custom Courier Solutions</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Alpha Connect Courier, Inc. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Alpha Connect Courier, Inc. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
